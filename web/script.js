@@ -1,11 +1,15 @@
 var info = {
-    year: "2024",
-    date: "November 11 to 17",
-    city: "Goiânia - Goiás",
+    year: "2025",
+    date: "November 13 to 19",
+    city: "Vitória - Espirito Santo",
     chair: "Fagner de Assis Moura Pimentel &ltfagnerpimentel@gmail.com&gt",
     oc: "<ul>\
-            <li>OC 1</li>\
-            <li>OC 2</li>\
+            <li>Ana Patricia Magalhães (UNEB/UNIFACS)</li>\
+            <li>Pedro (FURG)</li>\
+            <li>Gabriela Bassegio (FEI)</li>\
+            <li></li>Gustavo Fardo Armênio (UTFPR)</li>\
+            <li></li>Alexandre Costa (UFG)</li>\
+            <li></li>Rhayna Christiani Vasconcelos Marques Casado (USP)</li>\
         </ul>"
 };
 

@@ -1,0 +1,128 @@
+* {box-sizing: border-box}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Lato", sans-serif;
+}
+.tab {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* float: left; */
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    /* width: 30%; */
+    /* height: 300px; */
+}
+
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    text-align: center;
+}
+
+.tab #rules {
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    text-align: center;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.center{
+    display: block;
+    text-align: center;
+}
+h2, h3 {
+    width: 100%;
+    display: block;
+    background-color: #ddd;
+    text-align: center;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    /* flex-direction: column;
+    align-items: center; */
+    justify-content: center;
+
+}
+.photos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#teams{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+picture {
+    margin: 0 1% 0 1%;
+    width: 48%;
+}
+figure {
+    border: 1px #cccccc solid;
+    padding: 4px;
+}
+
+figcaption {
+    background-color: black;
+    color: white;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 3px;
+    background-color: #ccc;
+    color: black;
+}
+
+table {
+    border: solid 5px gray;
+}
+
+th {
+    text-align: center;
+    border: solid 2px gray;
+}
+
+td {
+    border: solid 1px gray;
+    text-align: left;
+}

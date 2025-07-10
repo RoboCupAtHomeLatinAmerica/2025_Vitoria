@@ -7,9 +7,9 @@ var info = {
             <li>Ana Patricia Magalhães (UNEB/UNIFACS)</li>\
             <li>Pedro (FURG)</li>\
             <li>Gabriela Bassegio (FEI)</li>\
-            <li></li>Gustavo Fardo Armênio (UTFPR)</li>\
-            <li></li>Alexandre Costa (UFG)</li>\
-            <li></li>Rhayna Christiani Vasconcelos Marques Casado (USP)</li>\
+            <li>Gustavo Fardo Armênio (UTFPR)</li>\
+            <li>Alexandre Costa (UFG)</li>\
+            <li>Rhayna Christiani Vasconcelos Marques Casado (USP)</li>\
         </ul>"
 };
 

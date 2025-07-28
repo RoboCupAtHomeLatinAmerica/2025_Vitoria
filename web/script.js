@@ -1,6 +1,6 @@
 var info = {
     year: "2025",
-    date: "November 13 to 19",
+    date: "October 13 to 19",
     city: "Vitória - Espirito Santo",
     chair: "Fagner de Assis Moura Pimentel &ltfagnerpimentel@gmail.com&gt",
     oc: "<ul>\

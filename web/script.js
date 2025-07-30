@@ -5,7 +5,7 @@ var info = {
     chair: "Fagner de Assis Moura Pimentel &ltfagnerpimentel@gmail.com&gt",
     oc: "<ul>\
             <li>Ana Patricia Magalhães (UNEB/UNIFACS)</li>\
-            <li>Pedro (FURG)</li>\
+            <li>Pedro Edom Nunes (FURG)</li>\
             <li>Gabriela Bassegio (FEI)</li>\
             <li>Gustavo Fardo Armênio (UTFPR)</li>\
             <li>Alexandre Costa (UFG)</li>\

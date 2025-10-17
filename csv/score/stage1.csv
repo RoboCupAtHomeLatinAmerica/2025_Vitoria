@@ -1,10 +1,10 @@
-Team Name         ,Speech ,Person ,Navigation ,Manipulation ,Total
-Ada Robotics	    ,600 ,1100 , 450, , 
-BahiaRT	          ,600 ,0    , 0, , 
-FBot	            ,600 ,1100 , 1000, , 
-Mecha Electra	    ,500 ,0    , 350, , 
-Pequi Mecânico	  ,600 ,640  , 450, ,
-RoboFEI	          ,600 ,967  , 450, ,
-UnipDroidians	    ,0   ,0    , 0, ,
-UTBots	          ,600 ,40   , 450, ,
-Warthog Robotics	,100 ,0    , 0, ,
+Team Name         ,Speech ,Person  ,Navigation ,Manipulation ,Total
+Ada Robotics	    ,600 ,1100 ,450  ,400 ,2550  
+BahiaRT	          ,600 ,0    ,0    ,320 ,920
+FBot	            ,600 ,1100 ,1000 ,830 ,3530
+Mecha Electra	    ,500 ,0    ,350  ,250 ,1100
+Pequi Mecânico	  ,600 ,640  ,450  ,340 ,2030
+RoboFEI	          ,600 ,967  ,450  ,330 ,2347
+UnipDroidians	    ,0   ,0    ,0    ,0   ,0
+UTBots	          ,600 ,40   ,450  ,120 ,1210
+Warthog Robotics	,100 ,0    ,0    ,0   ,100

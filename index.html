@@ -26,14 +26,45 @@
         <span>RoboCup@Home Brazil Open <span class="year"></span></span>
       </a>
 
-      <nav class="hidden md:flex items-center gap-6 text-sm">
-        <button role="tab" aria-selected="true". aria-controls="tab-home"     id="tabbtn-home"     class="tabbtn data-[active=true]:bg-blue-600 data-[active=true]:text-white rounded-md border border-slate-300 dark:border-slate-700 px-3 py-2 text-sm" data-target="tab-home">Home</button>
-        <button role="tab" aria-selected="false" aria-controls="tab-cfp".     id="tabbtn-cfp"      class="tabbtn data-[active=true]:bg-blue-600 data-[active=true]:text-white rounded-md border border-slate-300 dark:border-slate-700 px-3 py-2 text-sm" data-target="tab-cfp">CfP</button>
-        <button role="tab" aria-selected="false" aria-controls="tab-teams"    id="tabbtn-teams"    class="tabbtn data-[active=true]:bg-blue-600 data-[active=true]:text-white rounded-md border border-slate-300 dark:border-slate-700 px-3 py-2 text-sm" data-target="tab-teams">Teams</button>
-        <button role="tab" aria-selected="false" aria-controls="tab-score"    id="tabbtn-score"    class="tabbtn data-[active=true]:bg-blue-600 data-[active=true]:text-white rounded-md border border-slate-300 dark:border-slate-700 px-3 py-2 text-sm" data-target="tab-score">Score</button>
-        <button role="tab" aria-selected="false" aria-controls="tab-schedule" id="tabbtn-schedule" class="tabbtn data-[active=true]:bg-blue-600 data-[active=true]:text-white rounded-md border border-slate-300 dark:border-slate-700 px-3 py-2 text-sm" data-target="tab-schedule">Schedule</button>
-        <button role="tab" aria-selected="false" aria-controls="tab-tasks"    id="tabbtn-tasks"    class="tabbtn data-[active=true]:bg-blue-600 data-[active=true]:text-white rounded-md border border-slate-300 dark:border-slate-700 px-3 py-2 text-sm" data-target="tab-tasks">Tasks Info</button>
-      </nav>      
+      <!-- Botão hambúrguer -->
+      <button id="menuToggle"
+        class="md:hidden inline-flex items-center gap-2 rounded-md border border-slate-300 dark:border-slate-700 px-3 py-2 text-sm"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menu">
+        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M3 6h18M3 12h18M3 18h18"/>
+        </svg>
+        Menu
+      </button>
+
+      <!-- Nav responsivo -->
+      <nav id="mainNav"
+        class="hidden md:flex items-center gap-2 md:gap-6 text-sm mt-3 md:mt-0"
+        role="tablist" aria-label="Seções do evento">
+
+        <button role="tab" aria-selected="true" aria-controls="tab-home"     id="tabbtn-home"
+          class="tabbtn data-[active=true]:bg-blue-600 data-[active=true]:text-white rounded-md border border-slate-300 dark:border-slate-700 px-3 py-2 text-sm"
+          data-target="tab-home">Home</button>
+
+        <button role="tab" aria-selected="false" aria-controls="tab-cfp"     id="tabbtn-cfp"
+          class="tabbtn data-[active=true]:bg-blue-600 data-[active=true]:text-white rounded-md border border-slate-300 dark:border-slate-700 px-3 py-2 text-sm"
+          data-target="tab-cfp">CfP</button>
+
+        <button role="tab" aria-selected="false" aria-controls="tab-teams"   id="tabbtn-teams"
+          class="tabbtn data-[active=true]:bg-blue-600 data-[active=true]:text-white rounded-md border border-slate-300 dark:border-slate-700 px-3 py-2 text-sm"
+          data-target="tab-teams">Teams</button>
+
+        <button role="tab" aria-selected="false" aria-controls="tab-score"   id="tabbtn-score"
+          class="tabbtn data-[active=true]:bg-blue-600 data-[active=true]:text-white rounded-md border border-slate-300 dark:border-slate-700 px-3 py-2 text-sm"
+          data-target="tab-score">Score</button>
+
+        <button role="tab" aria-selected="false" aria-controls="tab-schedule" id="tabbtn-schedule"
+          class="tabbtn data-[active=true]:bg-blue-600 data-[active=true]:text-white rounded-md border border-slate-300 dark:border-slate-700 px-3 py-2 text-sm"
+          data-target="tab-schedule">Schedule</button>
+
+        <button role="tab" aria-selected="false" aria-controls="tab-tasks"   id="tabbtn-tasks"
+          class="tabbtn data-[active=true]:bg-blue-600 data-[active=true]:text-white rounded-md border border-slate-300 dark:border-slate-700 px-3 py-2 text-sm"
+          data-target="tab-tasks">Tasks Info</button>
+      </nav>
 
     </div>
   </header>
@@ -425,6 +456,41 @@
   <script src="scripts/csv_parser3.js" type="text/javascript"></script>
   <script src="scripts/context.js" type="text/javascript"></script>
   <script src="scripts/csv_parser_score.js" type="text/javascript"></script>
+
+
+  <script>
+  (function () {
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('mainNav');
+
+    function setOpen(open) {
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+      nav.classList.toggle('hidden', !open);
+      // no mobile, empilha; no md+, já é flex horizontal
+      if (!nav.classList.contains('md:flex')) nav.classList.add('flex', 'flex-col', 'gap-2');
+    }
+
+    // abre/fecha ao clicar
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') !== 'true';
+      setOpen(open);
+    });
+
+    // fecha ao apertar ESC
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') setOpen(false);
+    });
+
+    // fecha ao clicar em um item (útil no mobile)
+    nav.addEventListener('click', (e) => {
+      if (e.target.closest('button[role="tab"]')) setOpen(false);
+    });
+
+    // garante fechado em load e aberto no md+
+    setOpen(false);
+  })();
+  </script>
 
 </body>
 </html>

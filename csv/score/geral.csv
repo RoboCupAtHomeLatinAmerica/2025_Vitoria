@@ -1,10 +1,10 @@
 Team Name         ,Poster ,Stage 1 ,Stage 2 ,Final ,Total
-Ada Robotics	    ,87.66  ,2550    ,0       ,      ,2637.66
-BahiaRT	          ,66.66  ,920     ,0       ,      ,986.66
-FBot	            ,93.25  ,3530    ,1000    ,      ,4623.25
-Mecha Electra	    ,64.08  ,1100    ,0       ,      ,1164.08
-Pequi Mecânico	  ,63.50  ,2030    ,100     ,      ,2193.50
-RoboFEI	          ,72.33  ,2347    ,700     ,      ,3119.33
-UnipDroidians	    ,41.83  ,0       ,0       ,      ,41.83
-UTBots	          ,63.50  ,1210    ,0       ,      ,1273.50
-Warthog Robotics	,61.25  ,100     ,0       ,      ,161.25
+Ada Robotics	    ,87.66  ,2550    ,0       ,1570  ,4207.66
+BahiaRT	          ,66.66  ,920     ,0       ,-     ,986.66
+FBot	            ,93.25  ,3530    ,1000    ,1525  ,6148.25
+Mecha Electra	    ,64.08  ,1100    ,0       ,-     ,1164.08
+Pequi Mecânico	  ,63.50  ,2030    ,100     ,-     ,2193.50
+RoboFEI	          ,72.33  ,2347    ,700     ,1810  ,4929.33 
+UnipDroidians	    ,41.83  ,0       ,0       ,-     ,41.83
+UTBots	          ,63.50  ,1210    ,0       ,-     ,1273.50
+Warthog Robotics	,61.25  ,100     ,0       ,-     ,161.25

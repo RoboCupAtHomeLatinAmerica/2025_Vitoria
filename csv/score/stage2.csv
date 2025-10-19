@@ -1,10 +1,10 @@
 Team Name         ,Carry My Luggage ,Clean Up	,Restaurant	,GPSR ,Total
-Ada Robotics	    ,0 ,0 ,   0, ,0
-BahiaRT	          ,0 ,0 ,   0, ,0
-FBot	            ,0 ,0 , 120, ,120
-Mecha Electra	    ,0 ,0 ,   0, ,0
-Pequi Mecânico	  ,0 ,0 , 100, ,100
-RoboFEI	          ,0 ,0 , 600, ,600
-UnipDroidians	    ,0 ,0 ,   0, ,0
-UTBots	          ,0 ,0 ,   0, ,0
-Warthog Robotics	,0 ,0 ,   0, ,0
+Ada Robotics	    ,0 ,0 ,   0,   0, 0
+BahiaRT	          ,0 ,0 ,   0,   0, 0
+FBot	            ,0 ,0 , 120, 880, 1000
+Mecha Electra	    ,0 ,0 ,   0,   0, 0
+Pequi Mecânico	  ,0 ,0 , 100,   0, 100
+RoboFEI	          ,0 ,0 , 700,   0, 700
+UnipDroidians	    ,0 ,0 ,   0,   0, 0
+UTBots	          ,0 ,0 ,   0,   0, 0
+Warthog Robotics	,0 ,0 ,   0,   0, 0
